@@ -1,0 +1,1 @@
+send msg in time use ServerSocketChannel and SocketChannel when learning NIO
