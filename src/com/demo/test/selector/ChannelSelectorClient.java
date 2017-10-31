@@ -2,7 +2,7 @@
  * Copyright (c) 2017年10月31日 by XuanWu Wireless Technology Co.Ltd 
  *             All rights reserved  
  */
-package com.demo.test.tcp;
+package com.demo.test.selector;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;
@@ -13,10 +13,10 @@ import java.util.Scanner;
 /**
  * @author <a href="mailto:chengqiuping@wxchina.com ">qiuping.Cheng</a>
  * @version 1.0.0
- * @Description
+ * @Description 这个和tcp的client是一样的
  * @date 2017/10/31
  */
-public class SocketChannelClient {
+public class ChannelSelectorClient {
 
     public static void main(String[] args) throws IOException {
         //打开连接，但是并未连接

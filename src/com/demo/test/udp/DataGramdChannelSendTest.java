@@ -59,7 +59,7 @@ public class DataGramdChannelSendTest {
         //发送控制台输入消息
         while (true) {
             Scanner sc = new Scanner(System.in);
-            String next = sc.next();
+            String next = sc.nextLine();
             try {
                 sendMessage(channel, next);
             } catch (IOException e) {
