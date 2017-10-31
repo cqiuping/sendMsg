@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="029f12fd-c9e9-4faa-8712-03d6c15fd29d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/demo/test/tcp/SocketChannelClient.java" afterPath="$PROJECT_DIR$/src/com/demo/test/tcp/SocketChannelClient.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/demo/test/udp/DataGramdChannelSendTest.java" afterPath="$PROJECT_DIR$/src/com/demo/test/udp/DataGramdChannelSendTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -820,12 +819,12 @@
       <option name="presentableId" value="Default" />
       <updated>1509416868912</updated>
       <workItem from="1509416871596" duration="55000" />
-      <workItem from="1509417708769" duration="10683000" />
+      <workItem from="1509417708769" duration="10992000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10738000" />
+    <option name="totallyTimeSpent" value="11047000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />

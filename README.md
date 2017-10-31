@@ -1,1 +1,4 @@
-send msg in time use ServerSocketChannel and SocketChannel when learning NIO
+NIO的方式发送消息
+tcp包使用了ServerSocketChannel和SocketChannel
+udp包使用了DataGramChannel
+selector包使用了selector是重新写了tcp和udp
