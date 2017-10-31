@@ -27,7 +27,12 @@ public class ServerSocketChannelServer {
         try {
             ServerSocketChannel serverSocketChannel = ServerSocketChannel.open();
             serverSocketChannel.bind(new InetSocketAddress(1244));
+            serverSocketChannel.configureBlocking(false);//设置非阻塞模式
             while(true){
+                /*如果设置了非阻塞模式，那么会一直轮询并返回结果，所以这句话会无限执行
+                *如果没有设置非阻塞模式，这句话只会执行一次，因为在accept()的地方阻塞了
+                 */
+                System.out.println("阻塞了");
                 SocketChannel socketChannel = serverSocketChannel.accept();
                 if(socketChannel != null){
                     executor.submit(new SocketChannelThread(socketChannel));
