@@ -2,7 +2,7 @@
  * Copyright (c) 2017年10月31日 by XuanWu Wireless Technology Co.Ltd 
  *             All rights reserved  
  */
-package com.demo.test;
+package com.demo.test.tcp;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;
@@ -32,7 +32,15 @@ public class ServerSocketChannelServer {
                 /*如果设置了非阻塞模式，那么会一直轮询并返回结果，所以这句话会无限执行
                 *如果没有设置非阻塞模式，这句话只会执行一次，因为在accept()的地方阻塞了
                  */
-                System.out.println("阻塞了");
+//                System.out.println("阻塞了");
+                /**
+                 * Accepts a connection made to this channel's socket.
+                 *
+                 * <p> If this channel is in non-blocking mode then this method will
+                 * immediately return <tt>null</tt> if there are no pending connections.
+                 * Otherwise it will block indefinitely until a new connection is available
+                 * or an I/O error occurs.
+                 * */
                 SocketChannel socketChannel = serverSocketChannel.accept();
                 if(socketChannel != null){
                     executor.submit(new SocketChannelThread(socketChannel));

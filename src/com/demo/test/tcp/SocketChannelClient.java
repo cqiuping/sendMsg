@@ -2,7 +2,7 @@
  * Copyright (c) 2017年10月31日 by XuanWu Wireless Technology Co.Ltd 
  *             All rights reserved  
  */
-package com.demo.test;
+package com.demo.test.tcp;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;
@@ -19,7 +19,9 @@ import java.util.Scanner;
 public class SocketChannelClient {
 
     public static void main(String[] args) throws IOException {
+        //打开连接，但是并未连接
         SocketChannel socketChannel = SocketChannel.open();
+        //这里才开始建立连接
         socketChannel.connect(new InetSocketAddress(1244));
         while (true) {
             Scanner sc = new Scanner(System.in);

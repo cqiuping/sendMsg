@@ -2,7 +2,7 @@
  * Copyright (c) 2017年10月31日 by XuanWu Wireless Technology Co.Ltd 
  *             All rights reserved  
  */
-package com.demo.test;
+package com.demo.test.tcp;
 
 import java.io.IOException;
 import java.nio.ByteBuffer;
